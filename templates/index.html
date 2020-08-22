@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Model Results</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" id="latt" href="/">Drafting Wide Receivers</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="home" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Research Charts
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/Visual1">Combine Correlation</a>
+            <a class="dropdown-item" href="/Visual2">College Stats</a>
+            <a class="dropdown-item" href="/Visual3">Prominent Conferences and Colleges</a>
+            <a class="dropdown-item" href="/Visual4">Draft Position VS Production</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/modelcreate">Create a Model</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="Data.html">Data</a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid bg-light" style="padding-top: 50px">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <div class=container style="background:white">
+          <div class=row>
+            <h1>Prediction Model Summary</h1>
+          </div>
+          <hr>
+          <div class=row>
+            <div class="col-xs-12 col-sm-5">
+              <div class="pull-left"><img class="img-responsive" src="static/images/VanJefferson.jpg"
+                  alt="Van_Jefferson" style="max-width:100%;height:auto"></div>
+              <div class="pull-left"><img class="img-responsive" src="static/images/BrandonAiyuk.jpg" alt="BrandonAiyuk"
+                  style="max-width:100%;height:auto"></div>
+              <div class="pull-left"><img class="img-responsive" src="static/images/Johnson_Tyler.jpg"
+                  alt="Johnson_Tyler" style="max-width:100%;height:auto"></div>
+                  <div class="pull-left"><img class="img-responsive" src="static/images/JalenRaegor.jpg"
+                    alt="JalenRaegor" style="max-width:100%;height:auto"></div>
+                  
+            </div>
+            <div class="col-xs-12 col-sm-7">
+              <p> The purpose of this project is to try to project the success of this years wide receiver draft class
+                which was historically deep. As an Eagles fan I was skeptical of their first round pick when Justin
+                Jefferson
+                was still on the board. Based on the data I choose to incorporate in this model which included most College
+                stats gathered, class, a few select combine stats based on the analysis that can be seen under the research charts, 
+                and pickNum the Eagles made the right pick.  
+              </p>
+              <p>Check out some of the Reseach Charts which I utilized to decide what statistics to use in this model and click the create a
+                model link if you would like to try your hands at choosing a variety of variables and running your own model. I warn you
+                running different models can be addictive and given there are 61 different variables 90,177,170,226 combinations of 10 alone.
+                That being said I intend to expand this by getting more data pertaining to injuries and hope to expand my research to Drafting
+                running backs,tight ends, and maybe eventually QB's.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div id="table-area" class="">
+          <table id="ufo-table" class="table table-striped">
+            <thead>
+              <tr>
+                <th class="table-head">Rank</th>
+                <th class="table-head">Name</th>
+                <th class="table-head">Projected Fantasy Points</th>
+
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/outputfile.js"></script>
+    <script src="static/js/load.js"></script>
+</body>
+
+</html>
